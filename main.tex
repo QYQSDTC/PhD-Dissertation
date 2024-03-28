@@ -1,0 +1,68 @@
+\documentclass[format=draft,language=chinese,degree=phd]{hustthesis}
+
+\stuno{D202180035}
+\schoolcode{10487}
+\title{脉冲星测时阵列数据中连续引力波信号的新颖探测方法}{Novel Method for Detecting Continuous Gravitational Waves in Pulsar Timing Array Data}
+\author
+{钱以骞}{Yiqian Qian}
+\major
+{物理学}{Physics}
+\supervisor
+{王炎\hspace{1em}教授}{Prof. Yan Wang}
+\date{2025}{7}{1}
+
+\zhabstract{
+    引力波（GWs）是广义相对论预言中时空结构的微小波动，而脉冲星测时阵列（PTAs）则是探测低频引力波（$10^{-9}$ -- $10^{-7}\,\mathrm{Hz}$）的重要工具。在此频段，超大质量双黑洞系统（SMBHBs）是核心的探测对象。它们所释放的强大引力波信号可能会混合在一起，形成一个随机引力波背景（SGWB）。然而，距离较近或质量较大的个别超大质量双黑洞系统发出的连续引力波（CGWs）有望被直接探测到。目前，多个不同的 PTA 组织已经观测到了随机引力波背景的显著证据\cite{agazieNANOGrav15Yr2023b,xuSearchingNanoHertzStochastic2023, antoniadisSecondDataRelease2023e, theinternationalpulsartimingarraycollaborationComparingRecentPTA2023}。随着五百米口径球面射电望远镜（FAST）\cite{nanFIVEHUNDREDMETERAPERTURESPHERICAL2012}和正在建造的平方公里阵列射电望远镜（SKA）\cite{janssenGravitationalWaveAstronomy2015}的发展，我们预期在不久的将来脉冲星数量和测时精度得到大幅提升，届时探测到随机引力波背景之上的独立超大质量双黑洞系统的连续引力波信号将成为可能。
+
+    本论文提出一种新颖方法，可分辨若干混叠的连续引力波信号。此方法与国际上已有的全局拟合方法 \cite{babakResolvingMultipleSupermassive2012, petiteauResolvingMultipleSupermassive2013}不同，采用了时域逐级扣除法来区分各个连续引力波信号。我们建立了完整的数据处理流水线，验证了该方法的有效性。具体而言，我们模拟了在平方公里阵列（SKA）时期的脉冲星测时阵列，该阵列包含1000颗毫秒脉冲星，测时精度均达到100纳秒。同时，我们还模拟了200个超大质量双黑洞系统发出的连续引力波信号。值得注意的是，先前的方法\cite{babakResolvingMultipleSupermassive2012,petiteauResolvingMultipleSupermassive2013}最多仅能处理由几十颗脉冲星组成的测时阵列和识别十几个具有相同频率的超大质量双黑洞系统，而我们的方法则能处理更大规模的测时阵列和更多的超大质量双黑洞系统。
+
+    在接下来的研究中，我们运用了 PINT\cite{luoPINTModernSoftware2021} 脉冲星模拟软件，根据 NANOGrav 提供的15年观测数据\cite{agazieNANOGrav15Yr2023}中的68颗脉冲星实际观测的起止时间，以100纳秒的高斯白噪声、相互关联的红噪声和大致每两周一次的观测频率（引入非均匀采样）为基础，构建了一个逼真的模拟数据集。我们在此模拟数据集中注入了连续引力波信号。数据处理流程成功地从中辨别出了这一信号，并估算了信号源的空间位置和自转频率等重要参数。我们的方法和数据处理流程为未来的脉冲星测时阵列数据分析提供了新的思路和工具。
+}
+\zhkeywords{引力波，脉冲星，脉冲星测时阵列，超大质量双黑洞，数据处理}
+
+\enabstract
+{
+    Gravitational waves (GWs) are minute fluctuations in the fabric of spacetime, predicted by the theory of general relativity, and pulsar timing arrays (PTAs) are critical tools for detecting low-frequency gravitational waves (from $10^{-9}$ to $10^{-7}\,\mathrm{Hz}$). Within this frequency band, supermassive black hole binaries (SMBHBs) are the primary targets for detection. The gravitational wave signals they emit can incoherently superpose together, creating a stochastic gravitational wave background (SGWB). However, continuous gravitational wave signals (CGWs) emitted by individual SMBHBs that are either closer or more massive are expected to be directly detectable. To date, several PTAs have already observed significant evidence of the SGWB\cite{agazieNANOGrav15Yr2023b,xuSearchingNanoHertzStochastic2023,antoniadisSecondDataRelease2023e,theinternationalpulsartimingarraycollaborationComparingRecentPTA2023}. With the development of the Five-hundred-meter Aperture Spherical radio Telescope (FAST)\cite{nanFIVEHUNDREDMETERAPERTURESPHERICAL2012} and the Square Kilometre Array (SKA) under construction\cite{janssenGravitationalWaveAstronomy2015}, an increase in the number and timing precision of pulsars is anticipated in the near future. This will likely allow us to detect continuous gravitational wave signals from individual SMBHBs atop the SGWB.
+
+This dissertation proposes an novel method for resolving between multiple overlapping continuous gravitational wave signals. This method differs from the global fitting methods previously proposed\cite{babakResolvingMultipleSupermassive2012, petiteauResolvingMultipleSupermassive2013} and instead uses a time-domain, step-by-step subtraction approach to differentiate between continuous gravitational wave signals. We have developed a complete data analysis pipeline and validated the effectiveness of our method on simulated datasets. Specifically, we simulated a pulsar timing array during the SKA era, which includes 1000 millisecond pulsars (MSPs) with timing precision of $100\,\mathrm{ns}$ each. We also simulated CGWs from 200 SMBHBs. Notably, previous methods\cite{babakResolvingMultipleSupermassive2012, petiteauResolvingMultipleSupermassive2013} were only able to handle timing arrays made up of several dozen pulsars and identify a handful of SMBHBs with the same frequency.
+
+In subsequent research, we used the PINT\cite{luoPINTModernSoftware2021} pulsar simulation software based on the actual observational start and end times of 68 pulsars provided by NANOGrav 15-year data\cite{agazieNANOGrav15Yr2023}, simulating Gaussian white noise at $100\,\mathrm{ns}$, correlated red noise, and approximately biweekly observational cadence (introducing uneven sampling) to build a realistic simulated dataset. Within this dataset, we injected a CGW. The data analysis pipeline successfully resolved this signal and estimated vital parameters such as the sky location and orbital frequency of the signal source.
+}
+\enkeywords{Gravitational waves, Pulsars, Pulsar timing array, Supermassive black holes, Data analysis}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\makeabstract
+\tableofcontents
+\listoffigures
+\listoftables
+\mainmatter
+
+\include{intro}
+\include{ch2}
+\include{ch3}
+\include{ch4}
+
+\backmatter
+
+\begin{ack}
+致谢正文。
+\end{ack}
+
+\bibliography{ref}
+
+\appendix
+
+\begin{publications}
+    \item \textbf{Y.-Q. Qian}, S. D. Mohanty, and Y. Wang, Iterative Time-Domain Method for Resolving Multiple Gravitational Wave Sources in Pulsar Timing Array Data, Phys. Rev. D 106, 023016 (2022).
+    \item Y.-Y. Songsheng, \textbf{Y.-Q. Qian}, Y.-R. Li, P. Du, J.-W. Chen, Y. Wang, S. D. Mohanty, and J.-M. Wang, Search for Continuous Gravitational-Wave Signals in Pulsar Timing Residuals: A New Scalable Approach with Diffusive Nested Sampling, ApJ 922, 228 (2021).
+    
+\end{publications}
+
+\chapter{这是一个附录}\label{appendix:1}
+附录正文。
+
+
+\end{document}
