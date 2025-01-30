@@ -131,8 +131,8 @@
         BoldFont=*-bold,
         ItalicFont=*-italic,
         BoldItalicFont=*-bolditalic]{texgyretermes}
-      \setsansfont[Ligatures={Common,TeX}]{Droid Sans}
-      \setmonofont{CMU Typewriter Text}
+      \setsansfont[Ligatures={Common,TeX}]{Helvetica}
+      \setmonofont{JetBrains Mono}
       \defaultfontfeatures{Mapping=tex-text}
       % 中文字体
       \RequirePackage[CJKmath]{xeCJK}
@@ -155,8 +155,8 @@
       \RequirePackage{luatexja-fontspec}
       % 英文字体
       \setmainfont[Ligatures={Common,TeX}]{Tex Gyre Termes}
-      \setsansfont[Ligatures={Common,TeX}]{Droid Sans}
-      \setmonofont{CMU Typewriter Text}
+      \setsansfont[Ligatures={Common,TeX}]{Helvetica}
+      \setmonofont{JetBrains Mono}
       \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
       % 中文字体
       \setmainjfont[
